@@ -1,4 +1,8 @@
 
+/****** Object:  Table [dbo].[Users]    Script Date: 11/22/2022 11:49:15 AM ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Users]') AND type in (N'U'))
+DROP TABLE [dbo].[Users]
+GO
 
 /****** Object:  Table [dbo].[Users]    Script Date: 11/22/2022 11:14:23 AM ******/
 CREATE TABLE [dbo].[Users](
@@ -16,7 +20,7 @@ GO
 
 
 /****** Object:  StoredProcedure [dbo].[SPGetUsers]    Script Date: 11/22/2022 11:23:10 AM ******/
-DROP PROCEDURE [dbo].[SPGetUsers]
+DROP PROCEDURE IF EXISTS [dbo].[SPGetUsers]
 GO
 -- =============================================
 -- Author:		Yellaiah
@@ -45,7 +49,7 @@ END
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPValidateUser]    Script Date: 11/22/2022 11:24:57 AM ******/
-DROP PROCEDURE [dbo].[SPValidateUser]
+DROP PROCEDURE IF EXISTS [dbo].[SPValidateUser]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPValidateUser]    Script Date: 11/22/2022 11:24:57 AM ******/
@@ -77,7 +81,7 @@ END
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPSaveOrUpdateUser]    Script Date: 11/22/2022 11:25:31 AM ******/
-DROP PROCEDURE [dbo].[SPSaveOrUpdateUser]
+DROP PROCEDURE IF EXISTS [dbo].[SPSaveOrUpdateUser]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPSaveOrUpdateUser]    Script Date: 11/22/2022 11:25:31 AM ******/
@@ -147,7 +151,7 @@ END
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPDeleteUser]    Script Date: 11/22/2022 11:26:24 AM ******/
-DROP PROCEDURE [dbo].[SPDeleteUser]
+DROP PROCEDURE IF EXISTS [dbo].[SPDeleteUser]
 GO
 
 /****** Object:  StoredProcedure [dbo].[SPDeleteUser]    Script Date: 11/22/2022 11:26:24 AM ******/
