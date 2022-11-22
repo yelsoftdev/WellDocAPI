@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "397426af-1e51-4fc6-b32e-edf63409ffa3",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjY5MDI3ODk1LCJleHAiOjE2NjkxMTQyOTUsImlhdCI6MTY2OTAyNzg5NX0.24KNbwCF0Q8HURNGTADw0VFYVdcVtN43ULRJHUXESM8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Users/GetAllUsers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Users",
+						"GetAllUsers"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"XYZ\",\r\n    \"email\": \"xyz@yopmail.com\",\r\n    \"mobile\": \"8888877777\",\r\n    \"address\": \"Hosur\",\r\n    \"lastName\": \"xyz\",\r\n    \"password\": \"pwd\",\r\n    \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/Users/Registration",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Users",
+						"Registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjY5MDI3ODk1LCJleHAiOjE2NjkxMTQyOTUsImlhdCI6MTY2OTAyNzg5NX0.24KNbwCF0Q8HURNGTADw0VFYVdcVtN43ULRJHUXESM8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"firstName\": \"Ramu V\",\r\n    \"email\": \"ram@yopmail.com\",\r\n    \"mobile\": \"8888877777\",\r\n    \"address\": \"Hosur\",\r\n    \"lastName\": \"ramu\",\r\n    \"password\": \"pwd\",\r\n    \"isActive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44335/api/Users/Update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Users",
+						"Update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluIiwibmJmIjoxNjY5MDI3ODk1LCJleHAiOjE2NjkxMTQyOTUsImlhdCI6MTY2OTAyNzg5NX0.24KNbwCF0Q8HURNGTADw0VFYVdcVtN43ULRJHUXESM8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Users/Delete/22",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Users",
+						"Delete",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser Detail By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlAeW9wbWFpbC5jb20iLCJuYmYiOjE2NjkwODk4NzgsImV4cCI6MTY2OTE3NjI3OCwiaWF0IjoxNjY5MDg5ODc4fQ.vjKLeWqEUluwL-dSt8PYncGTctsE7_r8P8IBFD9bSSs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Users/GetUserDetailById/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Users",
+						"GetUserDetailById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

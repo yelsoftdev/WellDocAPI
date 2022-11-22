@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "fcbe2b60-846a-48f5-9834-cbfe6b4aa27f",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get a new token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44335/api/Login/GetToken/admin/pwd",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44335",
+					"path": [
+						"api",
+						"Login",
+						"GetToken",
+						"admin",
+						"pwd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
